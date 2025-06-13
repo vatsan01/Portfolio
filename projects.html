@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srivatsan Ganesh | DevOps Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Srivatsan Ganesh</h1>
+        <p>DevOps Engineer – AWS Infrastructure & Automation</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="toggle-dark">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="projects" class="fade-in">
+        <h2>Projects</h2>
+        <p>I'm a DevOps Engineer with a strong foundation in cloud infrastructure, CI/CD automation, container orchestration, and observability. I specialize in designing highly available, secure, and scalable solutions on AWS.</p>
+    </section>
+
+    <section id="skills" class="fade-in">
+        <h2>Skills</h2>
+        <ul>
+            <li>AWS (EC2, VPC, IAM, RDS, S3, Lambda, CloudWatch, ALB)</li>
+            <li>Infrastructure as Code (Terraform, CloudFormation)</li>
+            <li>CI/CD Tools (GitHub Actions, CodePipeline, Jenkins)</li>
+            <li>Containerization (Docker, Kubernetes, ECS, EKS)</li>
+            <li>Monitoring & Logging (CloudWatch, Prometheus, Grafana)</li>
+            <li>Version Control (Git, GitHub)</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:srivatsan.ganesh98@gmail.com">srivatsan.ganesh98@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/srivatsan-g" target="_blank">linkedin.com/in/srivatsan-g</a></p>
+        <p>GitHub: <a href="https://github.com/vatsan01" target="_blank">github.com/vatsan01</a></p>
+    </section>
+
+    <script>
+        document.getElementById("toggle-dark").onclick = function () {
+            document.body.classList.toggle("dark-mode");
+        };
+
+        window.addEventListener("load", () => {
+            document.querySelectorAll(".fade-in").forEach(el => {
+                el.style.opacity = 1;
+                el.style.transform = "translateY(0)";
+            });
+        });
+    </script>
+</body>
+</html>

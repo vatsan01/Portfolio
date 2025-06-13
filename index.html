@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srivatsan Ganesh | DevOps Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Srivatsan Ganesh</h1>
+        <p>DevOps Engineer – AWS Infrastructure & Automation</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="toggle-dark">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <p>I’m a DevOps Engineer with 3+ years of experience delivering cloud-native solutions using AWS. My expertise lies in building scalable infrastructure, automating deployments, and implementing CI/CD pipelines using tools like Terraform, Jenkins, Docker, and Kubernetes.</p>
+    <p>I specialize in Infrastructure as Code and managing complex AWS environments with a focus on security, observability, and performance optimization. My hands-on experience includes services such as EC2, S3, Lambda, IAM, CloudWatch, EKS, and CodePipeline.</p>
+    <p>With a strong foundation in data science and analytics certifications, I apply data-informed engineering practices to improve system reliability, cost efficiency, and deployment strategies.</p>
+    <p>Open to global cloud roles within high-growth, innovation-driven environments. Currently preparing for the AWS DevOps Engineer Professional certification to deepen my cloud architecture and delivery consulting capabilities.</p>
+</section>
+
+
+    <section id="skills" class="fade-in">
+    <h2>Skills</h2>
+    <ul>
+        <li>Amazon VPC, EC2, RDS, ALB, S3, Lambda, CloudWatch, IAM</li>
+        <li>AWS Glue, Athena, SNS, EKS, CloudTrail, Control Tower, Organizations</li>
+        <li>CI/CD Tools: GitHub Actions, AWS CodePipeline, CodeBuild, Jenkins</li>
+        <li>Infrastructure as Code: Terraform, Helm, CloudFormation</li>
+        <li>Monitoring & Observability: Prometheus, Grafana</li>
+        <li>Security: SCP, Secrets Manager, Cloud Security Best Practices</li>
+        <li>Other Tools: Docker, Kubernetes, Git, Bash, Jenkins, SCP</li>
+        <li>Data Tools: Python, SQL, MySQL, Power BI, Tableau</li>
+        <li>Foundational Knowledge: Data Analytics, Machine Learning</li>
+    </ul>
+</section>
+
+
+    <section id="contact" class="fade-in">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:srivatsan.ganesh98@gmail.com">srivatsan.ganesh98@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/srivatsan-g" target="_blank">linkedin.com/in/srivatsan-g</a></p>
+        <p>GitHub: <a href="https://github.com/vatsan01" target="_blank">github.com/vatsan01</a></p>
+    </section>
+
+    <script>
+        document.getElementById("toggle-dark").onclick = function () {
+            document.body.classList.toggle("dark-mode");
+        };
+
+        window.addEventListener("load", () => {
+            document.querySelectorAll(".fade-in").forEach(el => {
+                el.style.opacity = 1;
+                el.style.transform = "translateY(0)";
+            });
+        });
+    </script>
+</body>
+</html>
