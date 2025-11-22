@@ -1,68 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Srivatsan Ganesh | DevOps Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Srivatsan Ganesh | DevOps & SRE Engineer</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Portfolio of Srivatsan Ganesh, Senior DevOps & Site Reliability Engineer specializing in AWS, Kubernetes, and AI/ML infrastructure." />
 </head>
-<body>
-    <header>
-        <h1>Srivatsan Ganesh</h1>
-        <p>DevOps Engineer – AWS Infrastructure & Automation</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><button id="toggle-dark">🌙</button></li>
-            </ul>
-        </nav>
-    </header>
+<body class="bg-slate-950 text-slate-100 font-sans">
+  <!-- Navbar -->
+  <header class="border-b border-slate-800 bg-slate-950/90 sticky top-0 z-20 backdrop-blur">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+      <div class="font-semibold tracking-tight">
+        <span class="text-blue-400">Srivatsan</span> Ganesh
+      </div>
+      <nav class="hidden md:flex gap-6 text-sm text-slate-300">
+        <a href="#about" class="hover:text-blue-400">About</a>
+        <a href="#skills" class="hover:text-blue-400">Skills</a>
+        <a href="#experience" class="hover:text-blue-400">Experience</a>
+        <a href="#projects" class="hover:text-blue-400">Projects</a>
+        <a href="#architecture" class="hover:text-blue-400">Architecture</a>
+        <a href="#contact" class="hover:text-blue-400">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <section id="about" class="fade-in">
-    <h2>About Me</h2>
-    <p>I’m a DevOps Engineer with 3+ years of experience delivering cloud-native solutions using AWS. My expertise lies in building scalable infrastructure, automating deployments, and implementing CI/CD pipelines using tools like Terraform, Jenkins, Docker, and Kubernetes.</p>
-    <p>I specialize in Infrastructure as Code and managing complex AWS environments with a focus on security, observability, and performance optimization. My hands-on experience includes services such as EC2, S3, Lambda, IAM, CloudWatch, EKS, and CodePipeline.</p>
-    <p>With a strong foundation in data science and analytics certifications, I apply data-informed engineering practices to improve system reliability, cost efficiency, and deployment strategies.</p>
-    <p>Open to global cloud roles within high-growth, innovation-driven environments. Currently preparing for the AWS DevOps Engineer Professional certification to deepen my cloud architecture and delivery consulting capabilities.</p>
-</section>
+  <!-- Hero -->
+  <section class="max-w-6xl mx-auto px-4 py-12 md:py-16">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="text-sm uppercase tracking-[0.2em] text-blue-400 mb-2">
+          DevOps · Site Reliability · AI Infra
+        </p>
+        <h1 class="text-3xl md:text-4xl font-bold mb-4">
+          Senior DevOps & Site Reliability Engineer
+        </h1>
+        <p class="text-slate-300 mb-4">
+          I design, build, and operate cloud-native platforms for
+          <span class="text-blue-400">AI/ML workloads</span> with a focus on
+          high availability, automation, and reliability.
+        </p>
+        <p class="text-sm text-slate-400 mb-6">
+          4+ years of experience across AWS, Kubernetes, Terraform, CI/CD,
+          observability, and GPU-accelerated infrastructure. Open to global roles and
+          relocation to Singapore.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#contact" class="px-5 py-2 rounded-full bg-blue-500 hover:bg-blue-600 text-sm font-medium">
+            Contact Me
+          </a>
+          <a href="Srivatsan_Ganesh_DevOps_Resume.pdf" class="px-5 py-2 rounded-full border border-slate-600 text-sm hover:border-blue-400">
+            Download Resume
+          </a>
+          <a href="https://github.com/vatsan01" target="_blank" class="px-5 py-2 rounded-full border border-slate-600 text-sm hover:border-blue-400">
+            GitHub
+          </a>
+        </div>
+      </div>
 
+      <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-5 text-sm">
+        <h2 class="text-sm font-semibold mb-3 text-slate-200">
+          Quick Snapshot
+        </h2>
+        <ul class="space-y-2 text-slate-300">
+          <li>✅ 4+ years in DevOps & SRE</li>
+          <li>✅ Built & operated EKS clusters for GPU ML training & inference</li>
+          <li>✅ Automated infra with Terraform, CloudFormation & Python</li>
+          <li>✅ Reduced deployment time by 60% via CI/CD optimization</li>
+          <li>✅ Improved MTTR by 35% with observability & alerting</li>
+        </ul>
+        <div class="mt-4 text-xs text-slate-400">
+          Current stack: AWS · Kubernetes · Terraform · GitHub Actions · Jenkins ·
+          Prometheus · Grafana · CloudWatch · Kafka · Redis · Elasticsearch
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="skills" class="fade-in">
-    <h2>Skills</h2>
-    <ul>
-        <li>Amazon VPC, EC2, RDS, ALB, S3, Lambda, CloudWatch, IAM</li>
-        <li>AWS Glue, Athena, SNS, EKS, CloudTrail, Control Tower, Organizations</li>
-        <li>CI/CD Tools: GitHub Actions, AWS CodePipeline, CodeBuild, Jenkins</li>
-        <li>Infrastructure as Code: Terraform, Helm, CloudFormation</li>
-        <li>Monitoring & Observability: Prometheus, Grafana</li>
-        <li>Security: SCP, Secrets Manager, Cloud Security Best Practices</li>
-        <li>Other Tools: Docker, Kubernetes, Git, Bash, Jenkins, SCP</li>
-        <li>Data Tools: Python, SQL, MySQL, Power BI, Tableau</li>
-        <li>Foundational Knowledge: Data Analytics, Machine Learning</li>
-    </ul>
-</section>
+  <!-- About -->
+  <section id="about" class="max-w-6xl mx-auto px-4 py-8 border-t border-slate-800">
+    <h2 class="text-xl font-semibold mb-3">About Me</h2>
+    <p class="text-slate-300 text-sm leading-relaxed">
+      I’m a DevOps & Site Reliability Engineer with a strong focus on
+      <span class="text-blue-400">AI/ML infrastructure</span>. I enjoy designing
+      resilient, observable, and automated systems that allow data scientists and
+      engineers to iterate quickly without worrying about the underlying platform.
+      My experience spans AWS, Kubernetes, GPU computing, CI/CD, and high
+      availability architectures for production workloads.
+    </p>
+  </section>
 
+  <!-- Skills -->
+  <section id="skills" class="max-w-6xl mx-auto px-4 py-8 border-t border-slate-800">
+    <h2 class="text-xl font-semibold mb-4">Core Skills</h2>
+    <div class="grid md:grid-cols-3 gap-5 text-sm">
+      <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-4">
+        <h3 class="font-semibold mb-2 text-slate-200">Cloud & Containers</h3>
+        <ul class="space-y-1 text-slate-300">
+          <li>AWS (EC2, EKS, VPC, IAM, S3, RDS, Route53)</li>
+          <li>Docker, Kubernetes, Helm, ArgoCD</li>
+          <li>Auto Scaling, ALB, ECS</li>
+        </ul>
+      </div>
+      <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-4">
+        <h3 class="font-semibold mb-2 text-slate-200">Automation & CI/CD</h3>
+        <ul class="space-y-1 text-slate-300">
+          <li>Terraform, CloudFormation</li>
+          <li>GitHub Actions, Jenkins, CodePipeline</li>
+          <li>Bash, Python scripting</li>
+        </ul>
+      </div>
+      <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-4">
+        <h3 class="font-semibold mb-2 text-slate-200">Observability & SRE</h3>
+        <ul class="space-y-1 text-slate-300">
+          <li>Prometheus, Grafana, CloudWatch</li>
+          <li>ELK, Fluent Bit</li>
+          <li>SLA/SLO, Incident Management, HA/DR</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact" class="fade-in">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:srivatsan.ganesh98@gmail.com">srivatsan.ganesh98@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/srivatsan-g" target="_blank">linkedin.com/in/srivatsan-g</a></p>
-        <p>GitHub: <a href="https://github.com/vatsan01" target="_blank">github.com/vatsan01</a></p>
-    </section>
+  <!-- Experience -->
+  <section id="experience" class="max-w-6xl mx-auto px-4 py-8 border-t border-slate-800">
+    <h2 class="text-xl font-semibold mb-4">Experience</h2>
+    <div class="space-y-5 text-sm text-slate-300">
+      <div>
+        <div class="flex flex-wrap justify-between gap-2">
+          <h3 class="font-semibold">Cloud & Platform Engineer · Freelance (Upwork)</h3>
+          <span class="text-xs text-slate-400">Feb 2025 – Present · Remote</span>
+        </div>
+        <ul class="list-disc ml-5 mt-2 space-y-1">
+          <li>Architected Kubernetes-based deployment for AI inference workloads, reducing latency by ~38%.</li>
+          <li>Automated infrastructure provisioning with Terraform & Python, improving deployment speed by 45%.</li>
+          <li>Built centralized logging using Elasticsearch & Fluent Bit, cutting troubleshooting time by 30%.</li>
+        </ul>
+      </div>
 
-    <script>
-        document.getElementById("toggle-dark").onclick = function () {
-            document.body.classList.toggle("dark-mode");
-        };
+      <div>
+        <div class="flex flex-wrap justify-between gap-2">
+          <h3 class="font-semibold">DevOps Engineer · Cognizant Technology Solutions</h3>
+          <span class="text-xs text-slate-400">Apr 2022 – Dec 2024 · Chennai, India</span>
+        </div>
+        <ul class="list-disc ml-5 mt-2 space-y-1">
+          <li>Managed AWS-based EKS/ECS clusters for GPU & CPU ML workloads, achieving 99.99% uptime.</li>
+          <li>Optimized GPU performance (CUDA, NCCL, driver tuning), reducing training cycle times by 25%.</li>
+          <li>Designed CI/CD pipelines using GitHub Actions, Jenkins & CodePipeline, reducing deployment time by 60%.</li>
+          <li>Implemented Prometheus/Grafana + CloudWatch alerting, reducing MTTR by 35%.</li>
+          <li>Built multi-AZ HA/DR architectures with EC2, ALB & RDS failover to support mission-critical services.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-        window.addEventListener("load", () => {
-            document.querySelectorAll(".fade-in").forEach(el => {
-                el.style.opacity = 1;
-                el.style.transform = "translateY(0)";
-            });
-        });
-    </script>
+  <!-- Projects -->
+  <section id="projects" class="max-w-6xl mx-auto px-4 py-8 border-t border-slate-800">
+    <h2 class="text-xl font-semibold mb-4">Featured Projects</h2>
+    <div class="grid md:grid-cols-3 gap-5 text-sm">
+      <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-4">
+        <h3 class="font-semibold mb-1">AI Inference on EKS</h3>
+        <p class="text-slate-300 text-xs mb-2">
+          Kubernetes · GPU · AWS EKS · Helm · Prometheus
+        </p>
+        <p class="text-slate-300 text-xs mb-3">
+          Deployed GPU-backed inference services on EKS with auto-scaling, observability, and canary deployments.
+        </p>
+        <a href="https://github.com/vatsan01" class="text-blue-400 text-xs hover:underline" target="_blank">
+          View on GitHub →
+        </a>
+      </div>
+
+      <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-4">
+        <h3 class="font-semibold mb-1">Serverless Log Analytics Pipeline</h3>
+        <p class="text-slate-300 text-xs mb-2">
+          Lambda · Glue · Athena · SNS · CloudWatch
+        </p>
+        <p class="text-slate-300 text-xs mb-3">
+          Real-time aggregation and alerting pipeline for application logs, reducing incident resolution time by 30%.
+        </p>
+        <a href="https://github.com/vatsan01" class="text-blue-400 text-xs hover:underline" target="_blank">
+          View on GitHub →
+        </a>
+      </div>
+
+      <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-4">
+        <h3 class="font-semibold mb-1">Multi-AZ HA Web App Deployment</h3>
+        <p class="text-slate-300 text-xs mb-2">
+          EC2 · RDS · ALB · Auto Scaling · Terraform
+        </p>
+        <p class="text-slate-300 text-xs mb-3">
+          Production-ready infrastructure with HA, automated scaling, and IaC, delivering 99.99% uptime.
+        </p>
+        <a href="https://github.com/vatsan01" class="text-blue-400 text-xs hover:underline" target="_blank">
+          View on GitHub →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture / Diagrams -->
+  <section id="architecture" class="max-w-6xl mx-auto px-4 py-8 border-t border-slate-800">
+    <h2 class="text-xl font-semibold mb-4">Architecture & Diagrams</h2>
+    <p class="text-sm text-slate-300 mb-3">
+      Below are some high-level architecture diagrams of platforms and pipelines I’ve built and operated.
+    </p>
+    <div class="grid md:grid-cols-2 gap-5 text-xs text-slate-300">
+      <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-4">
+        <h3 class="font-semibold mb-2">AI/ML Training & Inference Platform</h3>
+        <p>
+          • EKS cluster with GPU nodes<br />
+          • Model training jobs via CI/CD<br />
+          • Object storage on S3<br />
+          • Monitoring with Prometheus & Grafana<br />
+          • Centralized logging via ELK/Fluent Bit
+        </p>
+      </div>
+      <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-4">
+        <h3 class="font-semibold mb-2">Serverless Log Analytics Pipeline</h3>
+        <p>
+          • App logs → CloudWatch → Lambda<br />
+          • Lambda → S3 → Glue Catalog<br />
+          • Athena queries for analytics<br />
+          • SNS for alerts & notifications<br />
+          • Dashboarding via Grafana/Athena data source
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-6xl mx-auto px-4 py-10 border-t border-slate-800">
+    <h2 class="text-xl font-semibold mb-3">Contact</h2>
+    <p class="text-sm text-slate-300 mb-4">
+      Interested in working together or discussing an opportunity in DevOps / SRE / AI infrastructure?
+      Feel free to reach out.
+    </p>
+    <div class="space-y-2 text-sm text-slate-300">
+      <p>Email: <a href="mailto:srivatsan.ganesh98@gmail.com" class="text-blue-400 hover:underline">srivatsan.ganesh98@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/srivatsan-g/" target="_blank" class="text-blue-400 hover:underline">linkedin.com/in/srivatsan-g/</a></p>
+      <p>GitHub: <a href="https://github.com/vatsan01" target="_blank" class="text-blue-400 hover:underline">github.com/vatsan01</a></p>
+      <p>Location: Chennai, India · Open to Singapore relocation & visa sponsorship</p>
+    </div>
+  </section>
+
+  <footer class="border-t border-slate-800 py-4 text-center text-xs text-slate-500">
+    © <span id="year"></span> Srivatsan Ganesh · DevOps & Site Reliability Engineer
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
